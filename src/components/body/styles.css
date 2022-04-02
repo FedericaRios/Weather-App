@@ -1,0 +1,39 @@
+.body-container {
+    border: 2px solid blue;
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-card-main {
+    background-color: blueviolet;
+    border-radius: 25px;
+    height: 90%;
+    width: 60%;
+    display: flex;
+}
+
+.body-card-main > div {
+    border-radius: 25px;
+    width: 50%;
+    height: 100%;
+}
+
+.body-section-img {
+background-color: brown;
+}
+
+.body-section-info-clima {
+background-color: green;
+}
+/* 
+.body-containers {
+    background-color: blue;
+    width: 60%;
+    height: 10%;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+} */
