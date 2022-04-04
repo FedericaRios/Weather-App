@@ -5,11 +5,12 @@ import Body from '../../components/body/Body';
 import Footer from '../../components/footer/Footer';
 
 const Home = () => {
+    const [infoWeather, setInfoWeather] = useState({});
 
     return (
         <div className='home-container'>
-            <Header />
-            <Body />
+            <Header setInfoWeather={setInfoWeather} />
+            <Body infoWeather={infoWeather} />
             <Footer />
         </div>
     )

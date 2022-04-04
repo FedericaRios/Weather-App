@@ -8,26 +8,29 @@
 }
 
 .body-card-main {
-    background-color: blueviolet;
     border-radius: 25px;
     height: 90%;
     width: 60%;
     display: flex;
+    background-color: blanchedalmond;
+    opacity: 0.3;
 }
 
-.body-card-main > div {
+.body-card-main>div {
     border-radius: 25px;
-    width: 50%;
     height: 100%;
 }
 
 .body-section-img {
-background-color: brown;
+    border: 1px solid red;
+    width: 45%;
 }
 
 .body-section-info-clima {
-background-color: green;
+    width: 55%;
+    opacity: none;
 }
+
 /* 
 .body-containers {
     background-color: blue;
