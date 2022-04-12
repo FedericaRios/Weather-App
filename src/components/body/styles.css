@@ -12,8 +12,9 @@
     height: 90%;
     width: 60%;
     display: flex;
-    background-color: blanchedalmond;
-    opacity: 0.3;
+    background-color: white;
+    opacity: .4;
+    /* border: 1px solid black; */
 }
 
 .body-card-main>div {
@@ -22,21 +23,33 @@
 }
 
 .body-section-img {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 45%;
 }
 
 .body-section-info-clima {
     width: 55%;
-    opacity: none;
 }
 
-/* 
-.body-containers {
-    background-color: blue;
-    width: 60%;
-    height: 10%;
-    position: absolute;
-    display: flex;
-    justify-content: space-evenly;
-} */
+.day {
+    margin-top: 40px;
+    opacity: 1;
+}
+
+.city-name {
+    font-size: 50px;
+    opacity: 1;
+    color: black;
+    margin-top: 5px;
+}
+
+.current {
+    font-size: 20px;
+    margin-top: 25px;
+    opacity: 1;
+}
+
+.weather {
+    font-size: 20px;
+    margin-top: 5px;
+}

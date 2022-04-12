@@ -4,6 +4,7 @@ import Header from '../../components/header/Header';
 import Body from '../../components/body/Body';
 import Footer from '../../components/footer/Footer';
 
+
 const Home = () => {
     const [infoWeather, setInfoWeather] = useState({});
 
@@ -11,7 +12,7 @@ const Home = () => {
         <div className='home-container'>
             <Header setInfoWeather={setInfoWeather} />
             <Body infoWeather={infoWeather} />
-            <Footer />
+            <Footer infoWeather={infoWeather} />
         </div>
     )
 }

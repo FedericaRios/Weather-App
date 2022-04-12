@@ -9,14 +9,27 @@
 
 .header-buscador {
     border-radius: 10px;
-    width: 35%;
+    width: 30%;
     height: 30%;
+    border: 1px solid black;
 }
 
 .header-buscador::placeholder {
     padding-left: 5px;
 }
 
+.header-buscador:focus {
+    outline-color: rgb(176, 235, 243);
+}
+
 .header-button {
-    
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.header-button:hover {
+    background-color: rgb(176, 235, 243);
+    box-shadow: 5px 2px 20px 2px rgb(176, 235, 243);
 }
