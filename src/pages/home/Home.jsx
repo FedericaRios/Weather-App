@@ -6,13 +6,14 @@ import Footer from '../../components/footer/Footer';
 
 
 const Home = () => {
-    const [infoWeather, setInfoWeather] = useState({});
+    const [dailyWeatherInfo, setDailyWeatherInfo] = useState([]);
+    const [currentWeatherInfo, setCurrentWeatherInfo] = useState({});
 
     return (
         <div className='home-container'>
-            <Header setInfoWeather={setInfoWeather} />
-            <Body infoWeather={infoWeather} />
-            <Footer infoWeather={infoWeather} />
+            <Header setDailyWeatherInfo={setDailyWeatherInfo} setCurrentWeatherInfo={setCurrentWeatherInfo} />
+            <Body currentWeatherInfo={currentWeatherInfo} />
+            <Footer dailyWeatherInfo={dailyWeatherInfo} />
         </div>
     )
 }

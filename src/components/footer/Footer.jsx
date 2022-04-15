@@ -3,15 +3,23 @@ import styles from './styles.css';
 import CardItem from '../cardItem/CardItem';
 
 const Footer = (props) => {
-    const temperatureMax = props.infoWeather.main?.temp_max;
-    const temperatureMin = props.infoWeather.main?.temp_min;
+
     return (
         <div className='footer-container'>
             <div className="container-card-item">
-                <CardItem temperatureMax={temperatureMax} temperatureMin={temperatureMin} />
-                <CardItem temperatureMax={temperatureMax} temperatureMin={temperatureMin} />
-                <CardItem temperatureMax={temperatureMax} temperatureMin={temperatureMin} />
-                <CardItem temperatureMax={temperatureMax} temperatureMin={temperatureMin} />
+                {
+                    props.dailyWeatherInfo.length && props.dailyWeatherInfo.map(day => {
+                        console.log(day)
+                        return (
+                            <CardItem
+                                weather={day.weather}
+                                tempMax={day.temp.max}
+                                tempMin={day.temp.min}
+                                dayName={day.dt}
+                            />)
+                    })
+                }
+
             </div>
         </div>
     )

@@ -23,7 +23,12 @@ function Header(props) {
         const longitud = latitud_longitud[0].lon;
         let dataWeather = await fetch(`${API_weather}?lat=${latitud}&lon=${longitud}&exclude=minutely,hourly,alerts&appid=${KEY_API}&units=metric`)
         dataWeather = await dataWeather.json()
-        props.setInfoWeather(dataWeather)
+        const dayCurrent = dataWeather.current;
+        const nameCity = latitud_longitud[0].name;
+        const week = dataWeather.daily;
+        props.setDailyWeatherInfo(week)
+        props.setCurrentWeatherInfo({ ...dayCurrent, name: nameCity })
+
         console.log(latitud_longitud)
         console.log(dataWeather)
     }
