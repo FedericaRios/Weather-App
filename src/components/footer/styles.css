@@ -1,5 +1,5 @@
 .footer-container {
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     height: 20%;
     width: 100%;
     display: flex;
@@ -7,9 +7,9 @@
 }
 
 .container-card-item {
-    border: 1px solid black;
-    width: 55%;
-    height: 100%;
+    /* border: 1px solid black; */
+    width: 85%;
+    height: 115%;
     display: flex;
     justify-content: space-evenly;
     margin-top: -5%;

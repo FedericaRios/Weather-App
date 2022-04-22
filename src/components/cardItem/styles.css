@@ -1,16 +1,31 @@
 .container-Item {
     opacity: none;
-    width: 20%;
+    z-index: 1;
+    width: 12%;
     height: 100%;
     border-radius: 10px;
-    opacity: 0.3;
-    background-color: white
+    border: 1px solid black;
+    font-size: 50px;
+    text-align: center;
+    background-color: white;
+    opacity: .9;
+}
+
+.render-day {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 6px;
 }
 
 .temperatura-max {
-    font-size: 20px;
+    font-size: 15px;
+    margin-top: 1px;
 }
 
 .temperatura-min {
-    font-size: 20px;
+    font-size: 15px;
+}
+
+.render-weather {
+    margin-top: 6px;
 }

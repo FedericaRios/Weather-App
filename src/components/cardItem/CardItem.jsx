@@ -1,10 +1,6 @@
 import React from 'react';
 import './styles.css';
-import solcito from '../../assets/soleado.jpg';
-import cielito from '../../assets/cielito.jpg';
-import lluvia from '../../assets/lluvia.jpg';
-import nublado from '../../assets/nublado.jpg';
-import parcialsoleado from '../../assets/parcialmenteSoleado.jpg';
+import { WiDayCloudy, WiCloudy, WiDaySunny, WiRain, WiSnow, } from "react-icons/wi";
 
 const CardItem = ({
     weather,
@@ -28,25 +24,43 @@ const CardItem = ({
                 return 'Friday';
             case 6:
                 return 'Saturday';
-            case 7:
+            case 0:
                 return 'Sunday';
         }
     }
-    console.log(tempMax)
+
+    const typeWeather = weather[0].main;
+
+    const renderWeather = () => {
+        switch (typeWeather) {
+            case 'Clouds Clear':
+                return <WiDayCloudy />;
+            case 'Clouds':
+                return <WiCloudy />;
+            case "Clear":
+                return <WiDaySunny />;
+            case 'Rain':
+                return <WiRain />;
+            case 'Snow':
+                return <WiSnow />;
+        }
+    }
+
     return (
         <div className="container-Item">
             <h1 className="render-day">
                 {renderDay()}
             </h1>
-            {<h1 className="temperatura-min">
-                {tempMin}°C
-            </h1>}
             {<h1 className="temperatura-max">
-                {tempMax}°C
+                Max: {tempMax}°C
             </h1>}
-            {/* {<h1 className="temperatura-min">
-                {weather}
-            </h1>} */}
+            {<h1 className="temperatura-min">
+                Min: {tempMin}°C
+            </h1>}
+            <div className="render-weather">
+                {renderWeather()}
+            </div>
+
         </div>
     )
 };
