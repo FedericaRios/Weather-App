@@ -7,7 +7,7 @@ const Body = (props) => {
     const currentTemp = props.currentWeatherInfo.temp;
     const currentWeather = props.currentWeatherInfo.weather && props.currentWeatherInfo.weather[0].description;
 
-    const typeWeather = props.currentWeatherInfo.weather[0].main;
+    const typeWeather = props.currentWeatherInfo.weather && props.currentWeatherInfo.weather[0].main;
 
     const renderWeather = () => {
         switch (typeWeather) {

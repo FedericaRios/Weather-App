@@ -18,6 +18,10 @@
 }
 
 .body-card-main>div {
+    opacity: 1;
+}
+
+.body-card-main>div {
     border-radius: 25px;
     height: 100%;
 }

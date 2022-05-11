@@ -26,6 +26,8 @@ const CardItem = ({
                 return 'Saturday';
             case 0:
                 return 'Sunday';
+            default:
+                return '';
         }
     }
 
@@ -43,6 +45,8 @@ const CardItem = ({
                 return <WiRain />;
             case 'Snow':
                 return <WiSnow />;
+            default:
+                return <WiDaySunny />;
         }
     }
 
