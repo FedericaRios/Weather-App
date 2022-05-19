@@ -6,8 +6,8 @@ import Presentation from './pages/presentation/Presentation';
 function App() {
   return (
     <BrowserRouter>
-      <Routes basename={process.env.PUBLIC_URL}>
-        <Route exact path="/" element={<Presentation />} />
+      <Routes >
+        <Route exact path="/proyecto-clima" element={<Presentation />} />
         <Route exact path="/home" element={<Home />} />
         {/* <Route path='*' element={<NotFound />} /> */}
       </Routes>
