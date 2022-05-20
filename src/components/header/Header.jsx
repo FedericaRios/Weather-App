@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import style from './styles.css';
 
 // const API = "https://api.openweathermap.org/data/2.5/weather";
-const API_lat_long = "http://api.openweathermap.org/geo/1.0/direct";
+const API_lat_long = "https://api.openweathermap.org/geo/1.0/direct";
 const API_weather = "https://api.openweathermap.org/data/2.5/onecall";
 const KEY_API = "f3a6b4f1ad9818628925224b11a71e2e";
 
