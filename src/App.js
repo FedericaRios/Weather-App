@@ -1,17 +1,17 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/home/Home';
 import Presentation from './pages/presentation/Presentation';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes >
-        <Route exact path="/proyecto-clima" element={<Presentation />} />
+        <Route exact path="/" element={<Presentation />} />
         <Route exact path="/home" element={<Home />} />
         {/* <Route path='*' element={<NotFound />} /> */}
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
