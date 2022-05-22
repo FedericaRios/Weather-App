@@ -15,21 +15,26 @@
 }
 
 .header-buscador::placeholder {
-    padding-left: 5px;
+    padding-left: 5%;
 }
 
 .header-buscador:focus {
-    outline-color: rgb(176, 235, 243);
+    outline-color: rgb(212, 89, 147);
 }
 
 .header-button {
-    border-radius: 5px;
     border: 1px solid black;
-    margin-left: 5px;
+    border-radius: 25px;
+    padding: 0.5%;
+    margin-left: 2%;
     cursor: pointer;
+    border: 1px solid rgb(212, 89, 147);
+    color: rgb(212, 89, 147);
+    background-color: white;
 }
 
 .header-button:hover {
-    background-color: rgb(176, 235, 243);
-    box-shadow: 5px 2px 20px 2px rgb(176, 235, 243);
+    border: 1px solid white;
+    background-color: rgb(212, 89, 147);
+    color: white;
 }

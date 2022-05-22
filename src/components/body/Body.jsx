@@ -26,7 +26,7 @@ const Body = (props) => {
 
     return (
         <div className='body-container'>
-            <div className='body-card-main'>
+            {cityName && <div className='body-card-main'>
                 <div className="body-section-img">
                     {renderWeather()}
                 </div>
@@ -36,7 +36,7 @@ const Body = (props) => {
                     <h1 className="current">Temperature current: {currentTemp}°C</h1>
                     <h1 className="weather">Weather: {currentWeather}</h1>
                 </div>
-            </div>
+            </div>}
             <div className="body-containers"></div>
         </div>
     )

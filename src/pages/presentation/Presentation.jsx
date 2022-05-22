@@ -10,9 +10,11 @@ const Presentation = () => {
 
     return (
         <div className="presentation">
-            <h1>Consulta el pronóstico</h1>
-            <div className="presentation-button">
-                <button onClick={redireccionHome}>Consultar</button>
+            <h1>¡Conocé el pronóstico!</h1>
+            <div>
+                <button
+                    className="button"
+                    onClick={redireccionHome}>Consultar</button>
             </div>
         </div>
 
