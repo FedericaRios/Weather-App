@@ -10,7 +10,7 @@ const Presentation = () => {
 
     return (
         <div className="presentation">
-            <h1>¡Conocé el pronóstico!</h1>
+            <h2>¡Conocé el pronóstico!</h2>
             <div>
                 <button
                     className="button"

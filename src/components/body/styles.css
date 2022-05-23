@@ -1,5 +1,5 @@
 .body-container {
-    height: 60%;
+    height: 55%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -8,7 +8,7 @@
 
 .body-card-main {
     border-radius: 25px;
-    height: 90%;
+    height: 100%;
     width: 60%;
     display: flex;
     background-color: white;
@@ -17,12 +17,9 @@
 }
 
 .body-card-main>div {
-    opacity: 1;
-}
-
-.body-card-main>div {
     border-radius: 25px;
     height: 100%;
+    opacity: 1;
 }
 
 .body-section-img {
@@ -58,4 +55,39 @@
 .weather {
     font-size: 20px;
     margin-top: 5px;
+}
+
+@media (max-width: 530px) {
+    .body-container {
+        margin-top: -10%;
+    }
+
+    .body-card-main {
+        height: 65%;
+        width: 80%;
+    }
+
+    .body-section-img {
+        width: 40%;
+        font-size: 100px;
+    }
+
+    .day {
+        font-size: 20px;
+    }
+
+    .city-name {
+        font-size: 25px;
+        margin-top: 5%;
+    }
+
+    .current {
+        font-size: 15px;
+        margin-top: 10%;
+    }
+
+    .weather {
+        font-size: 15px;
+        margin-top: 5%;
+    }
 }

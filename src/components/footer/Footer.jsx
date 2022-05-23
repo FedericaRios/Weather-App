@@ -9,7 +9,6 @@ const Footer = (props) => {
             <div className="container-card-item">
                 {
                     sevenDaysArray && sevenDaysArray.map(day => {
-                        console.log(day)
                         return (
                             <CardItem
                                 weather={day.weather}

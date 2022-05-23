@@ -28,9 +28,6 @@ function Header(props) {
         const week = dataWeather.daily;
         props.setDailyWeatherInfo(week)
         props.setCurrentWeatherInfo({ ...dayCurrent, name: nameCity })
-
-        console.log(latitud_longitud)
-        console.log(dataWeather)
     }
 
     return (
