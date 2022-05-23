@@ -1,4 +1,5 @@
 import React from 'react';
+import Manito from '../../assets/manito.png';
 import styles from './styles.css'
 import { WiDayCloudy, WiCloudy, WiDaySunny, WiRain, WiSnow, } from "react-icons/wi";
 
@@ -26,7 +27,7 @@ const Body = (props) => {
 
     return (
         <div className='body-container'>
-            {cityName && <div className='body-card-main'>
+            {cityName ? <div className='body-card-main'>
                 <div className="body-section-img">
                     {renderWeather()}
                 </div>
@@ -36,8 +37,11 @@ const Body = (props) => {
                     <h1 className="current">Temperature current: {currentTemp}°C</h1>
                     <h1 className="weather">Weather: {currentWeather}</h1>
                 </div>
-            </div>}
-            <div className="body-containers"></div>
+            </div> :
+                <div className="body-inicio">
+                    <h1>¡Introduce tu ciudad!</h1>
+                    <img className="body-inicio-manito" src={Manito}></img>
+                </div>}
         </div>
     )
 }
