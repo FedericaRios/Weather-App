@@ -37,7 +37,7 @@
     }
 
     .render-day {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .temperatura-max {
@@ -50,6 +50,6 @@
 
     .render-weather {
         margin-top: 10px;
-        font-size: 28px;
+        font-size: 30px;
     }
 }

@@ -59,11 +59,11 @@
 
 @media (max-width: 530px) {
     .body-container {
-        margin-top: -10%;
+        margin-top: -20%;
     }
 
     .body-card-main {
-        height: 65%;
+        height: 60%;
         width: 80%;
     }
 
@@ -82,12 +82,12 @@
     }
 
     .current {
-        font-size: 15px;
-        margin-top: 10%;
+        font-size: 18px;
+        margin-top: 15%;
     }
 
     .weather {
-        font-size: 15px;
+        font-size: 18px;
         margin-top: 5%;
     }
 }
