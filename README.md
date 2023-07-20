@@ -1,10 +1,10 @@
 Aplicación web que permite buscar el clima de ciudades de cualquier parte del mundo.
 
 Texnologías: 
-● React
-● Html
-● Js
-● Css
+-● React 
+-● Html
+-● Js
+-● Css
 
 Responsive design: Disponible para desktop y mobile.
 
