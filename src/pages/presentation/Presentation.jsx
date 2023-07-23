@@ -1,24 +1,22 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import styles from './styles.css';
+import './styles.css';
 
 const Presentation = () => {
-    let navigate = useNavigate()
+    const navigate = useNavigate();
+
     const redireccionHome = () => {
-        navigate("/home");
-    }
+        navigate('/home');
+    };
 
     return (
         <div className="presentation">
-            <h2>¡Conocé el pronóstico!</h2>
-            <div>
-                <button
-                    className="button"
-                    onClick={redireccionHome}>Consultar</button>
-            </div>
+            <h2 className="introduction-title">¡Conoce el pronóstico!</h2>
+            <button className="button" onClick={redireccionHome}>
+                Consultar
+            </button>
         </div>
-
-    )
+    );
 };
 
 export default Presentation;

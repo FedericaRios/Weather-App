@@ -1,9 +1,10 @@
 import React from 'react';
-import styles from './styles.css';
+import './styles.css';
 import CardItem from '../cardItem/CardItem';
 
 const Footer = (props) => {
-    const sevenDaysArray = props.dailyWeatherInfo.filter((day, index) => index !== 7)
+    const sevenDaysArray = props.dailyWeatherInfo.filter((day, index) => index !== 7);
+
     return (
         <div className='footer-container'>
             <div className="container-card-item">
@@ -15,6 +16,7 @@ const Footer = (props) => {
                                 tempMax={day.temp.max}
                                 tempMin={day.temp.min}
                                 dayName={day.dt}
+                                setSelectedDay={props.setSelectedDay}
                             />)
                     })
                 }

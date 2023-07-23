@@ -9,7 +9,6 @@ function App() {
       <Routes >
         <Route exact path="/" element={<Presentation />} />
         <Route exact path="/home" element={<Home />} />
-        {/* <Route path='*' element={<NotFound />} /> */}
       </Routes>
     </HashRouter>
   );
