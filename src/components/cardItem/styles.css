@@ -2,11 +2,10 @@
     z-index: 1;
     width: 12%;
     height: 100%;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
     border: 1px solid rgb(65, 224, 145);
     background-color: white;
-    font-size: 50px;
     text-align: center;
     cursor: pointer;
 }
@@ -14,20 +13,10 @@
 .render-day {
     font-size: 18px;
     margin-top: 10px;
-    margin-bottom: 6px;
 }
 
-.temperatura-max {
+.temperatura-container {
     font-size: 15px;
-    margin-top: 1px;
-}
-
-.temperatura-min {
-    font-size: 15px;
-}
-
-.render-weather {
-    margin-top: 6px;
 }
 
 .container-Item:hover {

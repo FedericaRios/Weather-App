@@ -9,7 +9,7 @@ const Home = () => {
     const [dailyWeatherInfo, setDailyWeatherInfo] = useState([]);
     const [currentWeatherInfo, setCurrentWeatherInfo] = useState({});
     const [selectedDay, setSelectedDay] = useState();
-    console.log(selectedDay, "selectedDay");
+
     return (
         <div className='home-container'>
             <Header setDailyWeatherInfo={setDailyWeatherInfo} setCurrentWeatherInfo={setCurrentWeatherInfo} />
@@ -17,6 +17,6 @@ const Home = () => {
             <Footer dailyWeatherInfo={dailyWeatherInfo} setSelectedDay={setSelectedDay} />
         </div>
     )
-}
+};
 
 export default Home;
