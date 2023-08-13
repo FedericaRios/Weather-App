@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/proyecto-clima/static/css/main.93f176f5.css",
-    "main.js": "/proyecto-clima/static/js/main.6e243700.js",
+    "main.css": "/proyecto-clima/static/css/main.b57f626d.css",
+    "main.js": "/proyecto-clima/static/js/main.5ecaf7f8.js",
     "static/media/cielito.jpg": "/proyecto-clima/static/media/cielito.b213e893e82b50cc6f32.jpg",
     "static/media/rain.png": "/proyecto-clima/static/media/rain.fea62e3beeb0049f5768.png",
     "static/media/snow.png": "/proyecto-clima/static/media/snow.10e99b501636f123df8f.png",
@@ -9,11 +9,11 @@
     "static/media/sunny.png": "/proyecto-clima/static/media/sunny.dec3806c86439bc75edd.png",
     "static/media/cloudy.png": "/proyecto-clima/static/media/cloudy.80594e9b1f9aa5b03c81.png",
     "index.html": "/proyecto-clima/index.html",
-    "main.93f176f5.css.map": "/proyecto-clima/static/css/main.93f176f5.css.map",
-    "main.6e243700.js.map": "/proyecto-clima/static/js/main.6e243700.js.map"
+    "main.b57f626d.css.map": "/proyecto-clima/static/css/main.b57f626d.css.map",
+    "main.5ecaf7f8.js.map": "/proyecto-clima/static/js/main.5ecaf7f8.js.map"
   },
   "entrypoints": [
-    "static/css/main.93f176f5.css",
-    "static/js/main.6e243700.js"
+    "static/css/main.b57f626d.css",
+    "static/js/main.5ecaf7f8.js"
   ]
 }
