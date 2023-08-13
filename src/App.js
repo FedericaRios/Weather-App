@@ -1,8 +1,7 @@
 import './App.css';
 import { HashRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/home/Home';
-import Presentation from './pages/presentation/Presentation';
-import Loader from './components/loader';
+import Home from './pages/home';
+import Presentation from './pages/presentation';
 
 function App() {
   return (

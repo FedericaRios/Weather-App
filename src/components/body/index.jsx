@@ -37,11 +37,11 @@ const Body = (props) => {
         <div className='body-container'>
             {cityName && (
                 <div className='body-card-main'>
+                    <div className="img-weather">
+                        {renderWeather(typeWeather)}
+                    </div>
                     {(selectedDayData && dayFound !== currentDay) ? (
                         <>
-                            <div className="img-weather">
-                                {renderWeather(typeWeather)}
-                            </div>
                             <div className="weather-container">
                                 <div className="info-container">
                                     <div className="data-container">
@@ -49,8 +49,7 @@ const Body = (props) => {
                                         <span>Humidity  <strong>{selectedDayData.humidity}%</strong></span>
                                     </div>
                                     <div className="data-container">
-                                        <strong>{renderDay(selectedDay)}</strong>
-                                        <span>{cityName}</span>
+                                        <strong>{renderDay(selectedDay)}<p style={{ marginTop: "2px", fontWeight: 400 }}>{cityName}</p></strong>
                                     </div>
                                 </div>
                                 <div className="temp-container">
@@ -63,9 +62,6 @@ const Body = (props) => {
                         </>
                     ) : (
                         <>
-                            <div className="img-weather">
-                                {renderWeather(typeWeather)}
-                            </div>
                             <div className="weather-container">
                                 <div className="info-container">
                                     <div className="data-container">
@@ -73,12 +69,11 @@ const Body = (props) => {
                                         <span>Humidity <strong>{humidity}%</strong></span>
                                     </div>
                                     <div className="data-container">
-                                        <strong>Today</strong>
-                                        <span>{cityName}</span>
+                                        <strong>Today <p style={{ marginTop: "2px", fontWeight: 400 }}>{cityName}</p></strong>
                                     </div>
                                 </div>
                                 <div className="temp-container">
-                                    <span style={{ fontSize: '18px' }}>Temperature current</span>
+                                    <span style={{ fontSize: '18px' }}>Current Temperature</span>
                                     <strong style={{ fontSize: '30px' }}>{currentTemp}°C</strong>
                                 </div>
                             </div>

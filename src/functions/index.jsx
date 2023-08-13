@@ -29,7 +29,7 @@ export const renderWeather = (typeWeather) => {
         'Snow': <img src={Snow} alt="Snow" style={{ width: "40%", height: "40%" }} />,
     };
 
-    const weatherIcon = weatherIcons[typeWeather] || <img src={clearSky} alt="Clouds Clear" style={{ width: "50%", height: "50%" }} />;
+    const weatherIcon = weatherIcons[typeWeather] || <img src={clearSky} alt="Clouds Clear" style={{ width: "40%", height: "40%" }} />;
 
     return weatherIcon;
 };

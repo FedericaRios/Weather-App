@@ -13,7 +13,7 @@ const CardItem = ({
     const typeWeather = weather[0].main;
 
     return (
-        <div className="container-Item" onClick={() => setSelectedDay(dayNumber)}>
+        <div className="container-item" onClick={() => setSelectedDay(dayNumber)}>
             <h1 className="render-day">
                 {renderDay(dayNumber)}
             </h1>

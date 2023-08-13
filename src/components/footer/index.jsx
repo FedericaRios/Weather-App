@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import CardItem from '../cardItem/CardItem';
+import CardItem from '../cardItem';
 
 const Footer = (props) => {
     const sevenDaysArray = props.dailyWeatherInfo.filter((day, index) => index !== 7);
@@ -20,7 +20,6 @@ const Footer = (props) => {
                             />)
                     })
                 }
-
             </div>
         </div>
     )

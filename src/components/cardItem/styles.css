@@ -1,4 +1,4 @@
-.container-Item {
+.container-item {
     z-index: 1;
     width: 12%;
     height: 100%;
@@ -19,32 +19,27 @@
     font-size: 15px;
 }
 
-.container-Item:hover {
+.container-item:hover {
     transform: scale(1.1);
     transition: all 0.0s;
 }
 
 @media (max-width: 530px) {
-    .container-Item {
-        width: 100%;
+    .container-item {
+        width: 105%;
         height: 70%;
         font-size: 20px;
     }
 
+    .container-item strong {
+        font-size: 18.5px;
+    }
+
+    .temperatura-container {
+        font-size: 16px;
+    }
+
     .render-day {
         font-size: 12px;
-    }
-
-    .temperatura-max {
-        font-size: 10px;
-    }
-
-    .temperatura-min {
-        font-size: 10px;
-    }
-
-    .render-weather {
-        margin-top: 10px;
-        font-size: 30px;
     }
 }

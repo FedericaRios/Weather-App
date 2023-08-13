@@ -5,25 +5,27 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-   justify-content: space-evenly;
+    justify-content: space-evenly;
 }
 
 .introduction-title {
     text-transform: uppercase;
   }
   
-  .button {
+.button {
     border-radius: 25px;
     padding: 10px 25px; 
     cursor: pointer;
-    color: rgb(65, 224, 145); 
-    background-color: white; 
     border: 1px solid rgb(65, 224, 145); 
+    color: white; 
+    background-color: rgb(65, 224, 145); 
     font-size: 16px; 
     transition: background-color 0.3s;
-  }
+}
   
-  .button:hover {
-    background-color: rgb(65, 224, 145); 
-    color: white;
-  }
+.button:hover {
+  background-color: white; 
+  color: rgb(65, 224, 145);
+  border: 1px solid rgb(65, 224, 145); 
+}
+

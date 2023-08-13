@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './styles.css';
 import Loader from '../loader';
 const API_lat_long = "https://api.openweathermap.org/geo/1.0/direct";
@@ -32,7 +32,7 @@ function Header(props) {
     };
 
     return (
-        <header className='header-nav'>
+        <header className='nav-container'>
             <input
                 type='search'
                 onChange={handleInputValue}
