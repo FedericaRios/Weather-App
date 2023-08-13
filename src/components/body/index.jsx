@@ -4,7 +4,7 @@ import { renderDay, renderWeather } from '../../functions';
 
 const Body = (props) => {
     const [selectedDayData, setSelectedDayData] = useState();
-    console.log(selectedDayData, "selectedDayData");
+
     const selectedDay = props.selectedDay;
     const cityName = props.currentWeatherInfo.name;
     const currentTemp = props.currentWeatherInfo.temp;
@@ -13,7 +13,6 @@ const Body = (props) => {
     const humidity = props.currentWeatherInfo.humidity;
     let days = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
     const today = new Date().getDay();
-    console.log(today);
     const currentDay = days[today];
     const dayFound = days.find((day, index) => index === selectedDay);
 
@@ -35,7 +34,7 @@ const Body = (props) => {
 
     return (
         <div className='body-container'>
-            {cityName && (
+            {(props.errorFindingCity === false && cityName) ? (
                 <div className='body-card-main'>
                     <div className="img-weather">
                         {renderWeather(typeWeather)}
@@ -49,7 +48,7 @@ const Body = (props) => {
                                         <span>Humidity  <strong>{selectedDayData.humidity}%</strong></span>
                                     </div>
                                     <div className="data-container">
-                                        <strong>{renderDay(selectedDay)}<p style={{ marginTop: "2px", fontWeight: 400 }}>{cityName}</p></strong>
+                                        <strong>{renderDay(selectedDay)}<p className="city-name">{cityName}</p></strong>
                                     </div>
                                 </div>
                                 <div className="temp-container">
@@ -69,7 +68,7 @@ const Body = (props) => {
                                         <span>Humidity <strong>{humidity}%</strong></span>
                                     </div>
                                     <div className="data-container">
-                                        <strong>Today <p style={{ marginTop: "2px", fontWeight: 400 }}>{cityName}</p></strong>
+                                        <strong>Today <p className="city-name">{cityName}</p></strong>
                                     </div>
                                 </div>
                                 <div className="temp-container">
@@ -80,7 +79,9 @@ const Body = (props) => {
                         </>
                     )}
                 </div>
-            )}
+            ) : (props.errorFindingCity === true) ?
+                <div className='error-container'>No se encontró la ciudad que desea buscar. Intente nuevamente</div>
+                : ''}
         </div>
     )
 };

@@ -7,22 +7,25 @@ const Footer = (props) => {
 
     return (
         <div className='footer-container'>
-            <div className="container-card-item">
-                {
-                    sevenDaysArray && sevenDaysArray.map(day => {
-                        return (
-                            <CardItem
-                                weather={day.weather}
-                                tempMax={day.temp.max}
-                                tempMin={day.temp.min}
-                                dayName={day.dt}
-                                setSelectedDay={props.setSelectedDay}
-                            />)
-                    })
-                }
-            </div>
+            {
+                props.errorFindingCity === false &&
+                <div className="container-card-item">
+                    {
+                        sevenDaysArray && sevenDaysArray.map(day => {
+                            return (
+                                <CardItem
+                                    weather={day.weather}
+                                    tempMax={day.temp.max}
+                                    tempMin={day.temp.min}
+                                    dayName={day.dt}
+                                    setSelectedDay={props.setSelectedDay}
+                                />)
+                        })
+                    }
+                </div>
+            }
         </div>
     )
-}
+};
 
 export default Footer;
