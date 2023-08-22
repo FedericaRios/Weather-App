@@ -13,7 +13,7 @@ Consumo de Api.
 
 Deploy: Github pages.
 
-Link: https://federicarios.github.io/proyecto-clima/
+Link: https://federicarios.github.io/Weather-App/
 ## 
 
 ![Weather App](https://github.com/FedericaRios/proyecto-clima/assets/98617759/d82981fc-d54e-47f5-89f9-8b683c25918f)
